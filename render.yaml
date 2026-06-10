@@ -3,11 +3,12 @@ services:
     name: spacez-backend
     runtime: python
     rootDir: backend
+    pythonVersion: "3.11.9"
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: GEMINI_API_KEY
-        sync: false        # you will paste this in the Render dashboard
+        sync: false
       - key: FRONTEND_URL
-        sync: false        # paste your Vercel URL here after deploying frontend
+        sync: false
     plan: free
