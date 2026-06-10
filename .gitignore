@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Secrets — NEVER commit
+.env
+backend/.env
+frontend/.env
+
+# Node
+node_modules/
+dist/
+.cache/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# NOTE: spacez_reviews_dataset.xlsx is intentionally tracked (needed for deployment)
